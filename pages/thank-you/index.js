@@ -12,7 +12,7 @@ const style = {
   btn: "px-8 md:px-6 py-3 md:py-4 transition bg-[#c6b28e] duration-[200ms] max-w-fit mx-auto md:mx-0 ",
   arrow: `text-xl`,
   btnContainer:
-    " bg-[#c6b28e] cursor-pointer hover:opacity-[0.9]  mx-auto md:mx-0 my-2 flex items-center justify-start bg-pink-700  text-white px-4 rounded-md",
+    " bg-[#c6b28e] cursor-pointer hover:opacity-[0.9]  mx-auto md:mx-0 my-2 flex items-center justify-start  text-white px-4 rounded-md",
   mainContent:
     "w-[100%] md:w-[65%] h-[80%] flex flex-col items-center justify-center  mx-auto font1 my-12 md:my-24",
   input:
@@ -52,10 +52,10 @@ const index = (props) => {
             <section className="flex items-center justify-between w-[70%] flex-col my-5 md:my-8">
               {/* <p className="text-white my-4">Wil je een afspraak boeken</p> */}
               <Link
-                href="https://perfecteyes.vercel.app"
+                href="https://www.mollie.com/checkout/select-method/cUBBZpQoAD"
                 className={style.btnContainer}
               >
-                <button className={style.btn}>Ga terug</button>
+                <button className={style.btn}>Boek Nu</button>
               </Link>
             </section>
           </div>
