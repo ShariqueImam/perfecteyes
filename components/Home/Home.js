@@ -27,12 +27,9 @@ const Home = (props) => {
   const { width } = useWindowSize();
   const FeaturedBackground1 = styled.div`
     background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(${(width < 500 && "/homebg.jpeg") ||
-      (width > 500 && width < 1000 && "/homebg.jpeg") ||
+      url(${(width < 550 && "/mobile.png") ||
+      (width > 550 && width < 1000 && "/homebg.jpeg") ||
       (width > 1000 && "/homebg.jpeg")});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-attachment: auto;
     height: ${width < 550 ? "190vh" : "110vh"};
     width: 100vw;
