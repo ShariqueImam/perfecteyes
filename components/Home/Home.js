@@ -48,18 +48,13 @@ const Home = (props) => {
               {/* <span className="text-white">Mintstudio</span> */}
             </h2>
             <p className={style.para}>
-              Doormiddel van een semi-permanente make-up machine worden er hele
-              fijne spikkels gezet in de eerste huidlaag. Laag voor laag wordt
-              de intensiviteit naar wens opgebouwd.
+            Heb jij altijd al gedroomd van perfecte wenkbrauwen die er natuurlijk uitzien en lang meegaan? Bij Perfect Eyes hebben we de oplossing voor jou! Onze getalenteerde permanente make-up artiesten gebruiken een semi-permanente make-up machine om hele fijne spikkels aan te brengen in de eerste huidlaag.
             </p>
             <p className={style.para1}>
-              Een ombré powderbrows behandeling heeft een herstel periode van 6
-              to 8 weken. Na de eerste behandeling zullen de wenkbrauwen in de
-              eerste 10 dagen lichtelijk vervellen. Na de eerste 10 dagen zal
-              het resultaat licht van kleur zijn doordat de eerste huidlaag aan
-              het herstellen is. Veel klanten merken dan ook dat de wenkbrauwen
-              steeds duidelijker maar tegelijkertijd ook natuurlijker zichtbaar
-              wordt tijdens een herstel pierode.
+            Met onze ombré powderbrows behandeling bereiken we een prachtig resultaat dat laag voor laag wordt opgebouwd. En het beste van alles? Het resultaat blijft tot wel twee jaar zitten! Onze behandeling heeft een herstelperiode van 6 tot 8 weken, waarin de wenkbrauwen steeds duidelijker en natuurlijker zichtbaar worden
+            </p>
+            <p className={style.para1}>
+            Maak nu een afspraak bij Perfect Eyes en ervaar zelf het gemak en de schoonheid van permanente make-up! Onze passie voor permanente make-up en onze toewijding om elke klant zorgvuldig te behandelen, zorgt voor verbluffende resultaten. Wacht niet langer en boek nu jouw ombré powderbrows behandeling.
             </p>
             {/* <div
               className={style.btnContainer}
