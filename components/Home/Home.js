@@ -25,21 +25,13 @@ const style = {
 
 const Home = (props) => {
   const { width } = useWindowSize();
-  const FeaturedBackground1 = styled.div`
-    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(${(width < 550 && "/mobile.png") ||
-      (width > 550 && width < 1000 && "/homebg.jpeg") ||
-      (width > 1000 && "/homebg.jpeg")});
-    background-attachment: auto;
-    height: ${width < 550 ? "190vh" : "110vh"};
-    width: 100vw;
-  `;
+ 
   const sendEmail = (e) => {
     e.preventDefault();
   };
   return (
     <Animator className={style.wrapper} style={{ fontFamily: "Poppins,serif" }}>
-      <FeaturedBackground1 className="flex flex-col items-center">
+      <div className="flex flex-col items-center">
         <Navbar />
         <div className="flex items-center sm:items-start justify-center w-[95%] md:w-[80%] flex-col md:flex-row py-12 md:py-4 lg:py-4 md:py-4">
           <div className={style.mainContent}>
@@ -78,7 +70,7 @@ const Home = (props) => {
             <HomeForm />
           </div>
         </div>
-      </FeaturedBackground1>
+      </div>
     </Animator>
   );
 };

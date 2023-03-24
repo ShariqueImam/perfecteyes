@@ -1,10 +1,11 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import Home from "../components/Home/Home";
-import Treatment from '../components/Treatment/Treatment'
+import Treatment from "../components/Treatment/Treatment";
 import Explain from "../components/Explain/Explain";
 import Footer from "../components/Footer/Footer";
 import Animator from "../components/UI/Animator";
+import useWindowSize from "../hooks/useWindowSize";
 import { scroller } from "react-scroll";
 import About from "../components/About/About";
 const style = {
@@ -21,6 +22,18 @@ export default function Main() {
       });
     }
   };
+  const { width } = useWindowSize();
+  const mystyle = {
+    background: `radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(${
+      (width < 550 && "/mobile.png") ||
+      (width > 550 && width < 1000 && "/homebg.jpeg") ||
+      (width > 1000 && "/homebg.jpeg")
+    })`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundAttachment: "auto",
+  };
   return (
     <Animator>
       <div className={style.container}>
@@ -32,18 +45,12 @@ export default function Main() {
           />
           <link rel="icon" href="/logo.png" />
         </Head>
-        <div className="contact">
+        <div className="contact" style={mystyle}>
           <Home />
         </div>
-        <div className="aboutus">
-          {/* <About onScroll={onScroll} /> */}
-        </div>
-        <div className="services">
-          {/* <Treatment /> */}
-        </div>
-        <div className="why">
-          {/* <Explain /> */}
-        </div>
+        <div className="aboutus">{/* <About onScroll={onScroll} /> */}</div>
+        <div className="services">{/* <Treatment /> */}</div>
+        <div className="why">{/* <Explain /> */}</div>
         {/* <Footer onScroll={onScroll} /> */}
       </div>
     </Animator>
