@@ -45,7 +45,7 @@ export default function Main() {
           />
           <link rel="icon" href="/logo.png" />
         </Head>
-        <div className="contact" style={mystyle}>
+        <div className="contact min-h-[100vh]" style={mystyle}>
           <Home />
         </div>
         <div className="aboutus">{/* <About onScroll={onScroll} /> */}</div>

@@ -32,10 +32,11 @@ const HomeForm = () => {
   const phoneChangeHandler = (e) => {
     setPhone(e.target.value);
   };
+
   const tokenWithWriteAccess =
     "skC4yP3NNBnuReqbXgrRjwa8yLrJQqekdOP1Qhu0Wvkhm7D0sjwL7DiZByjCFTIjV3mRbPqvjIFJ1WfdD4mNkPsflUUHXTzTpt19gJLhHKFB32fC3R1oWxp0bensbaonN4TRIRVBSp1BEC4OwA3vy98pG0eRmNHRxkyt8rLRwqwzYKbCNh68";
   const sendData = async () => {
-    if (Name == "" || Email == "" || Phone == "") {
+    if (Name == "" || Email == "" || Phone == "" || Phone.length<10) {
       setisAllFilled(false);
       return;
     }
@@ -96,9 +97,14 @@ const HomeForm = () => {
         value={Phone}
         // key="4"
       />
-      {!isAllFilled && (
+      {/* {!isAllFilled &&    (
         <p className="text-red-500 text-sm my-3">
           * Please fill all the details above
+        </p>
+      )} */}
+      {!isAllFilled &&  (
+        <p className="text-red-500 text-sm my-3">
+          * Please fill all the details above correctly
         </p>
       )}
       <p className="text-xs font1">
